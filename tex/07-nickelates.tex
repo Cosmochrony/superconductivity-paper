@@ -1,0 +1,215 @@
+\section{Application: Nickelate Superconductors}
+  \label{sec:nickelates}
+
+  \subsection{Structural Differences Relative to Cuprates}
+    \label{subsec:nickelates-structure}
+
+    Infinite-layer nickelates $R_{1-x}$Sr$_x$NiO$_2$
+    share the same square lattice symmetry ($D_{4h}$)
+    as cuprates,
+    but differ in several structural respects.
+
+    First,
+    the antiferromagnetic structure factor
+    at wavevector $(\pi,\pi)$
+    is significantly reduced relative to cuprates.
+    RIXS and neutron measurements indicate
+    a smaller magnetic exchange scale
+    $J_{\mathrm{Ni}}$
+    and a weaker peak intensity
+    $S_{\mathrm{Ni}}(\pi,\pi)$.
+
+    Second,
+    the Fermi surface is multi-band.
+    In addition to the Ni-derived band,
+    an electron pocket near $\Gamma=(0,0)$
+    originating from rare-earth orbitals
+    modifies the nesting properties
+    and partially isotropizes the electronic structure.
+
+    Within the framework of Section~\ref{sec:symmetry-selection-families},
+    these differences imply a reduced
+    frustration ratio
+    \begin{equation}
+      r_{\mathcal F}^{\mathrm{Ni}}
+      <
+      r_{\mathcal F}^{\mathrm{Cu}},
+    \end{equation}
+    where $r_{\mathcal F}$
+    is taken as a first-order proxy
+    proportional to $S(\pi,\pi)$.
+
+  \subsection{Predicted Gap Symmetry}
+    \label{subsec:nickelates-symmetry}
+
+    The symmetry channel is determined
+    by minimizing the cost functional
+    $\mathcal{C}_{\Pi}$
+    under the reduced and partially isotropized
+    frustration constraint.
+
+    In cuprates,
+    the strong staggered $(\pi,\pi)$ frustration
+    selects the $B_{1g}$ representation
+    ($d_{x^2-y^2}$ symmetry).
+    In nickelates,
+    the reduced frustration amplitude
+    and the presence of a $\Gamma$ pocket
+    alter the minimization landscape.
+
+    The framework predicts that
+    the lowest-cost configuration at optimal doping
+    lies in an extended $s$-wave class,
+    specifically an $s^\pm$ structure
+    with the following characteristics:
+
+    \begin{enumerate}
+      \item
+      The gap is nodeless within each Fermi pocket
+      at optimal doping.
+
+      \item
+      A sign change occurs between
+      the Ni-derived and rare-earth-derived pockets.
+
+      \item
+      In the underdoped regime,
+      nodal structure may develop near pocket edges
+      as $r_{\mathcal F}$ increases
+      and the staggered constraint regains angular weight.
+    \end{enumerate}
+
+    Many spin-fluctuation approaches yield
+    either $d$-wave or multi-band $s^\pm$
+    depending on assumed Fermiology
+    and interaction strength,
+    with no current consensus.
+    The present mechanism differs in that
+    symmetry selection is controlled
+    by the real-space frustration ratio
+    rather than by a momentum-dependent interaction kernel.
+
+  \subsection{Quantitative Estimate of the Critical Temperature}
+    \label{subsec:nickelates-tc}
+
+    To leading order,
+    the transition temperature in the quasi-2D regime
+    obeys
+    \begin{equation}
+      k_B T_c
+      \simeq
+      \frac{\pi}{2}
+      \delta J
+      \, f(r_{\mathcal F}),
+    \end{equation}
+    as introduced in Eq.~\ref{eq:Tc-general}.
+
+    For nickelates,
+    using representative experimental values
+    \begin{equation}
+      J_{\mathrm{Ni}}
+      \approx
+      60\text{--}80 \,\mathrm{meV},
+      \qquad
+      \delta_{\mathrm{opt}}^{\mathrm{Ni}}
+      \approx
+      0.20,
+    \end{equation}
+    and taking
+    $r_{\mathcal F}^{\mathrm{Ni}}$
+    as a first-order proxy
+    for the reduced $(\pi,\pi)$ structure factor,
+    one obtains
+    \begin{equation}
+      \frac{T_c^{\mathrm{Ni}}}{T_c^{\mathrm{Cu}}}
+      \approx
+      \frac{\delta_{\mathrm{Ni}} J_{\mathrm{Ni}}}
+      {\delta_{\mathrm{Cu}} J_{\mathrm{Cu}}}
+      \cdot
+      \frac{
+        r_{\mathcal F}^{\mathrm{Ni}}
+      }{
+        r_{\mathcal F}^{\mathrm{Cu}}
+      },
+    \end{equation}
+    up to order-unity corrections.
+
+    Using representative cuprate values
+    $J_{\mathrm{Cu}}\approx120\text{--}150\,\mathrm{meV}$
+    and $\delta_{\mathrm{opt}}^{\mathrm{Cu}}\approx0.16$,
+    this estimate yields
+    \begin{equation}
+      T_c^{\mathrm{Ni}}
+      \sim
+      0.3\text{--}0.4 \,
+      T_c^{\mathrm{Cu}},
+    \end{equation}
+    consistent with observed nickelate
+    transition temperatures in the 10--40\,K range,
+    and potentially higher under pressure.
+
+    This estimate involves no free fitting parameter.
+    All quantities entering the ratio
+    ($J$, $\delta$, $S(\pi,\pi)$)
+    are independently measurable.
+
+  \subsection{Disorder and Pressure Signatures}
+    \label{subsec:nickelates-signatures}
+
+    The predicted $s^\pm$ symmetry
+    implies intermediate sensitivity
+    to non-magnetic disorder.
+
+    Specifically,
+    the suppression rate
+    \begin{equation}
+      \frac{dT_c}{dn_{\mathrm{imp}}}
+    \end{equation}
+    under non-magnetic impurity substitution
+    should lie between
+    the Abrikosov--Gor'kov $d$-wave limit
+    and the Anderson-theorem $s^{++}$ limit.
+    Systematic impurity studies therefore
+    provide a direct test of the mechanism.
+
+    Under pressure,
+    both the effective exchange scale $J_{\mathrm{Ni}}$
+    and the inter-orbital hybridization
+    are modified,
+    entering the framework
+    through $J$ and $r_{\mathcal F}$.
+    An enhancement of $T_c$
+    correlated with measurable changes
+    in magnetic excitation spectra
+    would support the structural interpretation.
+
+  \subsection{Experimental Falsifiability}
+    \label{subsec:nickelates-falsifiability}
+
+    The mechanism would be invalidated if:
+
+    \begin{itemize}
+      \item
+      A robust $d_{x^2-y^2}$ gap symmetry
+      is conclusively established in nickelates
+      despite reduced $(\pi,\pi)$ frustration.
+
+      \item
+      The measured suppression of $T_c$
+      under non-magnetic disorder
+      matches precisely either
+      pure $d$-wave
+      or fully Anderson-protected $s^{++}$ behavior.
+
+      \item
+      $T_c$ enhancement under pressure
+      occurs without measurable modification
+      of magnetic excitation scales
+      or frustration proxies.
+    \end{itemize}
+
+    The predictive content of the framework
+    lies in the enforced coupling
+    between frustration amplitude,
+    symmetry selection,
+    and phase stiffness scaling.

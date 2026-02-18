@@ -1,0 +1,148 @@
+\section{Structural Framework}
+  \label{sec:structural-framework}
+
+  \subsection{Projection Fiber and Effective $U(1)$ Structure}
+    \label{subsec:projection-fiber}
+
+    The present mechanism is formulated within a minimal structural setting.
+    We assume that the effective electromagnetic gauge symmetry arises as
+    the $U(1)$ fiber symmetry of a projective structure
+    \begin{equation}
+      \Pi \cong S^3 ,
+    \end{equation}
+    whose Hopf fibration defines a base manifold and a circular fiber.
+    The fiber coordinate
+    \begin{equation}
+      \theta \in [0,2\pi)
+    \end{equation}
+    plays the role of an effective phase variable.
+
+    The electromagnetic potential $A$ is identified with the connection
+    associated with this $U(1)$ fiber in the projected description.
+    It is not an additional gauge field introduced independently,
+    but the connection of the fiber as it appears in the effective theory.
+    Gauge covariance therefore fixes the only admissible covariant gradient
+    for the fiber phase,
+    \begin{equation}
+      D\theta \equiv \nabla \theta - \frac{q}{\hbar} A ,
+      \label{eq:covariant-theta}
+    \end{equation}
+    where $q$ denotes the effective topological charge
+    of the configuration under consideration.
+
+    No further gauge postulate is introduced.
+    The $U(1)$ structure is entirely inherited from the fiber geometry.
+
+  \subsection{Topological Excitations and Composite Classes}
+    \label{subsec:topological-excitations}
+
+    Charged excitations correspond to topologically non-trivial
+    configurations of the fiber phase.
+    A single elementary excitation carries winding number
+    \begin{equation}
+      w = 1 ,
+    \end{equation}
+    and couples to the connection with effective charge $q=e$.
+
+    A bound composite of two such excitations forms a distinct
+    topological class characterized by
+    \begin{equation}
+      w = 2 .
+    \end{equation}
+    This class is not simply the superposition of two independent windings.
+    It corresponds to a globally coherent configuration in which
+    the fiber phase interpolates continuously between the two cores,
+    subject to a raccordement constraint.
+    Separating the cores introduces a phase defect
+    whose energetic cost defines a stability threshold.
+
+    For the $w=2$ class, the covariant gradient becomes
+    \begin{equation}
+      D\theta = \nabla \theta - \frac{2e}{\hbar} A .
+      \label{eq:covariant-theta-2e}
+    \end{equation}
+    This composite degree of freedom therefore carries effective charge $2e$
+    and supports a collective phase variable $\theta$.
+
+  \subsection{Projective Gap and Stability Criterion}
+    \label{subsec:projective-gap}
+
+    We define the \emph{projective gap} $\Delta_\Pi$
+    as the minimal excitation energy required
+    to destabilize the $w=2$ composite class.
+    Operationally, this corresponds to the lowest positive eigenvalue
+    of a linearized relaxation operator
+    restricted to the $U(1)$ fiber sector
+    around the composite configuration,
+    \begin{equation}
+      \Delta_\Pi \equiv
+      \lambda_{\min}
+      \left(
+        \mathcal{L}_\Pi \big|_{w=2}
+      \right) .
+      \label{eq:projective-gap}
+    \end{equation}
+
+    Physically, $\Delta_\Pi$ is the minimal energy cost
+    to either separate the composite into two $w=1$ excitations
+    or introduce a local phase slip that alters
+    the global winding class.
+    The existence of a finite $\Delta_\Pi$
+    is the structural condition for composite stability.
+
+    Two distinct mechanisms may generate such stability:
+
+    \begin{itemize}
+      \item In conventional low-$T_c$ systems,
+      a bosonic mediator lowers the effective raccordement cost,
+      stabilizing the composite through an attractive channel.
+      \item In strongly correlated systems,
+      stability arises from the reduction of real-space frustration
+      in the admissibility constraints of the fiber,
+      without invoking a separate mediator.
+    \end{itemize}
+
+    The remainder of this work shows that
+    once a stable $w=2$ composite exists,
+    global phase locking of the fiber
+    naturally generates the London and Ginzburg--Landau structures,
+    flux quantization, and Meissner screening.
+
+  \subsection{Free-Energy Functional from Phase Coherence}
+    \label{subsec:free-energy-functional}
+
+    When a macroscopic density of $w=2$ composites
+    occupies the same coherent phase sector,
+    we define the order parameter
+    \begin{equation}
+      \Psi = |\Psi| e^{i\theta} ,
+    \end{equation}
+    where $|\Psi|^2$ measures the density of composites
+    participating in coherent projection.
+
+    The leading contribution to the free energy
+    must be quadratic in the only gauge-covariant derivative available,
+    \begin{equation}
+      \mathcal{F}
+      \supset
+      \frac{\hbar^2 \rho_s}{2 m^*}
+      \left(
+        \nabla \theta - \frac{2e}{\hbar} A
+      \right)^2 ,
+      \label{eq:london-structure}
+    \end{equation}
+    where $\rho_s$ is the phase stiffness
+    and $m^*$ the effective inertia of the composite mode.
+
+    Equation~\ref{eq:london-structure}
+    is structurally identical to the London
+    and Ginzburg--Landau gradient terms.
+    It arises here from the energetic cost
+    of breaking global fiber coherence,
+    not from an assumed symmetry-breaking potential.
+
+    The Meissner effect, flux quantization,
+    and the effective mass of the gauge field
+    follow directly from Eq.~\ref{eq:london-structure}.
+    These consequences will be developed explicitly
+    in the following sections.

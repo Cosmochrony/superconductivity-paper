@@ -1,0 +1,173 @@
+\section{Symmetry Selection Across Material Families}
+  \label{sec:symmetry-selection-families}
+
+  \subsection{General Symmetry Selection Principle}
+    \label{subsec:general-selection}
+
+    Within the projective framework,
+    the superconducting gap symmetry is not postulated.
+    It emerges from a minimization problem on the fiber
+    raccordement cost under lattice and frustration constraints.
+
+    Given a lattice symmetry group $G$
+    and a dominant frustration channel characterized by
+    a wavevector $\mathbf{Q}$,
+    the admissible $w=2$ composite configurations
+    belong to irreducible representations of $G$.
+    The selected representation is the one that minimizes
+    the total fiber raccordement cost functional,
+    \begin{equation}
+      \mathcal{C}_{\text{tot}}
+      =
+      \int_{\text{FS}}
+      \mathcal{C}_{\Pi}
+      \big(
+      \mathbf{k};
+      \mathbf{Q},
+      \mathcal{F}
+      \big)
+      \, d\Omega ,
+      \label{eq:cost-functional}
+    \end{equation}
+    subject to global fiber continuity.
+
+    The functional $\mathcal{C}_{\Pi}$
+    encodes the local mismatch between
+    the composite phase configuration
+    and the staggered frustration background.
+    It depends on the dominant frustration vector $\mathbf{Q}$
+    and on the frustration amplitude proxy $\mathcal{F}$.
+
+    The symmetry channel minimizing Eq.~\ref{eq:cost-functional}
+    defines the superconducting gap representation.
+
+  \subsection{Role of the Frustration Ratio}
+    \label{subsec:role-rF}
+
+    To compare material families,
+    we introduce the dimensionless frustration ratio
+    \begin{equation}
+      r_{\mathcal F}
+      \equiv
+      \text{first-order proxy for relative frustration amplitude},
+      \label{eq:rF-definition}
+    \end{equation}
+    taken to scale proportionally,
+    at leading order,
+    with the magnetic structure factor $S(\mathbf{Q})$.
+
+    The ratio $r_{\mathcal F}$ does not fix the symmetry by itself.
+    It controls the relative weight of the staggered constraint
+    in the cost functional $\mathcal{C}_{\Pi}$.
+
+    Two limiting regimes can be identified:
+
+    \begin{itemize}
+      \item
+      \textbf{Strongly staggered regime}
+      ($r_{\mathcal F}$ large):
+      the composite must strongly suppress overlap
+      with the dominant frustration vector.
+      Nodal structures aligned with $\mathbf{Q}$
+      become energetically favorable.
+
+      \item
+      \textbf{Weak or isotropized frustration regime}
+      ($r_{\mathcal F}$ small):
+      the staggered constraint is reduced,
+      and isotropic or extended $s$-wave
+      configurations minimize the global cost.
+    \end{itemize}
+
+    In both cases,
+    the lattice symmetry group $G$
+    restricts the admissible irreducible representations.
+    The interplay between $G$ and $r_{\mathcal F}$
+    determines the selected gap symmetry.
+
+  \subsection{Material Comparison Criterion}
+    \label{subsec:material-comparison}
+
+    Consider two material families
+    with comparable lattice symmetry
+    but different frustration amplitudes.
+    Let their dominant exchange scales be
+    $J_1$ and $J_2$,
+    and their frustration ratios
+    $r_{\mathcal F}^{(1)}$ and $r_{\mathcal F}^{(2)}$.
+
+    To leading order,
+    the amplitude scale of composite formation
+    is set by $J$,
+    while the symmetry channel
+    is determined by the minimization of
+    $\mathcal{C}_{\Pi}$
+    under the corresponding $r_{\mathcal F}$.
+
+    The transition temperature then scales as
+    \begin{equation}
+      T_c
+      \sim
+      \frac{\pi}{2}
+      \delta J
+      \cdot
+      f(r_{\mathcal F}),
+      \label{eq:Tc-general}
+    \end{equation}
+    where $f(r_{\mathcal F})$
+    is a monotonic function encoding
+    the effect of frustration amplitude
+    on phase stiffness and composite stability.
+
+    The precise functional form of $f$
+    is model-dependent.
+    However,
+    its qualitative behavior is constrained:
+
+    \begin{itemize}
+      \item
+      $f(r_{\mathcal F})$ increases
+      from zero at vanishing frustration
+      to a maximum at intermediate $r_{\mathcal F}$.
+
+      \item
+      For very large $r_{\mathcal F}$,
+      phase stiffness is suppressed by reduced mobility,
+      and $T_c$ decreases.
+    \end{itemize}
+
+    Equation~\ref{eq:Tc-general}
+    provides a structural comparison tool
+    between related compounds.
+
+  \subsection{Preparation for Nickelates}
+    \label{subsec:preparation-nickelates}
+
+    Cuprates correspond to a regime
+    of strong $(\pi,\pi)$ frustration
+    and large $J$,
+    yielding $d_{x^2-y^2}$ symmetry
+    as the lowest-cost representation.
+
+    Nickelates share similar lattice symmetry
+    but exhibit reduced antiferromagnetic correlations,
+    modified Fermi surface topology,
+    and a smaller exchange scale.
+
+    Within the present framework,
+    these differences imply:
+
+    \begin{enumerate}
+      \item
+      a reduced $r_{\mathcal F}$ relative to cuprates,
+
+      \item
+      a modification of the minimization landscape
+      of $\mathcal{C}_{\Pi}$,
+
+      \item
+      a shift in the preferred irreducible representation.
+    \end{enumerate}
+
+    The next section develops
+    the resulting quantitative and qualitative predictions.

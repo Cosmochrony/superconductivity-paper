@@ -1,0 +1,178 @@
+\section{Phase Stiffness, Quasi-Two-Dimensional Coherence, and Operational Proxies}
+  \label{sec:phase-stiffness}
+
+  \subsection{Phase Stiffness as Relaxation Capacity}
+    \label{subsec:stiffness-relaxation}
+
+    In the strongly correlated regime,
+    the decisive quantity controlling the superconducting transition
+    is not the amplitude gap
+    $\Delta_\Pi^{\mathrm{amplitude}}$,
+    but the phase stiffness $\rho_s$.
+
+    Within the projective framework,
+    $\rho_s$ measures the relaxation capacity of the projected substrate,
+    that is,
+    its ability to redistribute local fiber phase mismatches
+    without generating topological defects.
+    We therefore identify $\rho_s$
+    as the operational proxy for the relaxation flux
+    \begin{equation}
+      \mathcal{R}
+      \equiv
+      \rho_s .
+      \label{eq:relaxation-proxy}
+    \end{equation}
+
+    In doped Mott systems,
+    the density of active composites
+    is proportional to the carrier concentration $\delta$.
+    Combined with Eq.~\ref{eq:gap-frustration},
+    this yields to leading order
+    \begin{equation}
+      \rho_s^{(0)}
+      \propto
+      \delta J .
+      \label{eq:rho-deltaJ}
+    \end{equation}
+
+    Equation~\ref{eq:rho-deltaJ}
+    provides the structural origin
+    of the experimentally observed Uemura scaling
+    in underdoped cuprates.
+
+  \subsection{Quasi-Two-Dimensional Phase Transition}
+    \label{subsec:quasi-2d}
+
+    Cuprates and related materials
+    are strongly anisotropic layered systems.
+    The dominant projective substrate
+    is provided by the CuO$_2$ planes,
+    while the interlayer coupling $J_\perp$
+    is significantly smaller than the in-plane exchange scale $J$.
+
+    In this quasi-two-dimensional limit,
+    phase coherence is established within each layer
+    through vortex unbinding.
+    The superconducting transition
+    is therefore governed by the
+    Berezinskii--Kosterlitz--Thouless (BKT) criterion,
+    \begin{equation}
+      k_B T_c
+      \simeq
+      \frac{\pi}{2}
+      \rho_s(T_c^-),
+      \label{eq:BKT}
+    \end{equation}
+    where $\rho_s(T_c^-)$ denotes the renormalized stiffness
+    evaluated at the vortex scale.
+
+    The system is not strictly two-dimensional.
+    Finite interlayer coupling
+    converts the BKT transition
+    into a true three-dimensional transition
+    at a slightly higher temperature.
+    The quasi-2D description applies
+    in the strongly anisotropic regime
+    \begin{equation}
+      J_\perp
+      \ll
+      k_B T_c
+      \ll
+      J ,
+    \end{equation}
+    which is satisfied in cuprate families
+    over a broad doping range.
+
+  \subsection{Frustration Density as Observable Proxy}
+    \label{subsec:frustration-observable}
+
+    To avoid purely definitional constructs,
+    the frustration density $\mathcal{F}$
+    must be independently accessible from experiment.
+
+    We use as first-order proxy
+    \begin{equation}
+      \mathcal{F}
+      \propto
+      \frac{S(\pi,\pi)}{S_{\max}},
+      \label{eq:F-proxy}
+    \end{equation}
+    where $S(\pi,\pi)$ is the magnetic structure factor
+    measured by neutron scattering or RIXS,
+    and $S_{\max}$ is the fully ordered reference value.
+
+    This proportionality is a leading-order assumption.
+    Non-linear corrections would modify numerical prefactors
+    but do not alter the qualitative phase selection mechanism
+    unless fine-tuned cancellations occur.
+
+  \subsection{Three Regimes from the Ratio \texorpdfstring{$\mathcal{F}/\mathcal{R}$}{F/R}}
+    \label{subsec:F-over-R}
+
+    The interplay between frustration density $\mathcal{F}$
+    and relaxation capacity $\mathcal{R}=\rho_s$
+    defines three qualitatively distinct regimes.
+
+    \begin{enumerate}
+      \item
+      \textbf{Antiferromagnetic regime:}
+      \(
+      \mathcal{F} \rightarrow 1,
+      \quad
+      \rho_s \rightarrow 0
+      \).
+      Long-range AF order dominates,
+      and composites cannot delocalize coherently.
+
+      \item
+      \textbf{Superconducting regime:}
+      Intermediate $\mathcal{F}$
+      with finite $\rho_s$.
+      Frustration is sufficient to stabilize composites,
+      while relaxation capacity allows global phase locking.
+
+      \item
+      \textbf{Glass-like or incoherent metallic regime:}
+      \(
+      \mathcal{F} \rightarrow 0,
+      \quad
+      \rho_s \rightarrow 0
+      \)
+      with strong disorder.
+      Frustration is too weak or too fragmented
+      to stabilize composites coherently.
+    \end{enumerate}
+
+    These regimes are experimentally distinguishable.
+    A material exhibiting intermediate $S(\pi,\pi)$
+    but vanishing $\rho_s$
+    must possess an additional mechanism suppressing
+    phase coherence,
+    such as strong disorder or orbital mixing.
+    Conversely,
+    superconductivity in a system
+    with negligible $(\pi,\pi)$ frustration
+    requires a different frustration channel,
+    providing a falsifiable diagnostic criterion.
+
+  \subsection{Emergent Dome Structure}
+    \label{subsec:dome-final}
+
+    The superconducting dome arises naturally
+    from the doping dependence of both $\mathcal{F}$ and $\rho_s$.
+
+    At low doping,
+    $\mathcal{F}$ is large but $\rho_s$ is small.
+    At optimal doping,
+    $\mathcal{F}$ is reduced
+    while $\rho_s \propto \delta J$ is maximal.
+    At overdoping,
+    $\mathcal{F}$ becomes too small
+    to sustain a significant projective gap,
+    and $T_c$ decreases accordingly.
+
+    No additional phenomenological tuning parameter
+    is required to generate the dome structure.
+    It emerges from the coupled evolution
+    of frustration amplitude and phase stiffness.

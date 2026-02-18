@@ -1,0 +1,193 @@
+\section{Strongly Correlated Regime: Frustration-Stabilized Composites}
+  \label{sec:strongly-correlated-regime}
+
+  \subsection{Real-Space Frustration and Raccordement Cost}
+    \label{subsec:frustration-raccordement}
+
+    In strongly correlated materials such as cuprates,
+    the normal state cannot be described as a weakly interacting Fermi liquid.
+    At low doping, the system is proximate to a Mott insulating phase
+    with robust antiferromagnetic correlations.
+    Within the present framework,
+    this regime is characterized by a high density of
+    real-space admissibility constraints on the fiber.
+
+    We denote by $\mathcal{F}$ the local frustration density,
+    defined operationally as a proxy for the fraction of
+    nearest-neighbor raccordement constraints
+    that cannot be simultaneously satisfied.
+    In cuprates, this quantity is tied to the
+    antiferromagnetic structure factor $S(\pi,\pi)$,
+    measurable by neutron scattering or RIXS,
+    and we take
+    \begin{equation}
+      \mathcal{F}
+      \propto
+      \frac{S(\pi,\pi)}{S_{\max}},
+      \label{eq:frustration-proxy}
+    \end{equation}
+    where $S_{\max}$ denotes the fully ordered reference value.
+
+    In this regime,
+    isolated $w=1$ excitations carry a high raccordement cost,
+    as their presence locally increases
+    the incompatibility of neighboring fiber phases.
+    A bound $w=2$ composite,
+    however,
+    can reduce the global frustration
+    by redistributing the phase mismatch
+    over a larger region.
+    Pair formation is therefore not driven by an external mediator,
+    but by the minimization of the real-space fiber incompatibility.
+
+    The projective gap $\Delta_\Pi^{\mathrm{amplitude}}$
+    in this regime is set by the dominant frustration scale,
+    which in cuprates is the magnetic exchange energy $J$.
+    To leading order,
+    \begin{equation}
+      \Delta_\Pi^{\mathrm{amplitude}}
+      \sim
+      J .
+      \label{eq:gap-frustration}
+    \end{equation}
+
+  \subsection{Symmetry Selection from Lattice Constraints}
+    \label{subsec:symmetry-selection}
+
+    The symmetry of the superconducting gap
+    is determined by minimizing the total raccordement cost
+    of the composite configuration
+    under lattice symmetry constraints.
+
+    In cuprates,
+    the underlying lattice symmetry is $D_{4h}$,
+    and the dominant frustration vector
+    is $(\pi,\pi)$.
+    The staggered nature of this frustration
+    imposes a sign-alternating constraint
+    on the fiber phase between neighboring plaquettes.
+
+    The admissible composite must satisfy two conditions:
+    \begin{enumerate}
+      \item minimize overlap with the frustrated $(\pi,\pi)$ sector,
+      \item preserve global fiber continuity without introducing defects.
+    \end{enumerate}
+
+    Among the irreducible representations of $D_{4h}$
+    available to a $w=2$ composite,
+    the lowest-cost solution under these constraints
+    lies in the $B_{1g}$ sector.
+    Its nodal structure aligns with the
+    $(\pi,0)$ and $(0,\pi)$ directions,
+    distributing the required sign alternation
+    across the Fermi surface
+    while avoiding localized raccordement singularities.
+
+    Extended $s$-wave configurations
+    do not simultaneously satisfy both conditions.
+    Although certain $A_{1g}$ form factors change sign,
+    they either accumulate excessive cost
+    near the $(\pi,\pi)$ sector
+    or require additional fiber defects
+    to maintain global continuity.
+
+    The selection of $d_{x^2-y^2}$ symmetry
+    thus follows from a real-space geometric minimization problem,
+    rather than from a momentum-space interaction kernel.
+
+  \subsection{Amplitude--Phase Separation and the Pseudogap}
+    \label{subsec:amplitude-phase}
+
+    A crucial distinction between conventional and strongly correlated regimes
+    is the separation of amplitude and phase scales.
+
+    The formation of local $w=2$ composites
+    occurs when
+    \begin{equation}
+      k_B T
+      \lesssim
+      \Delta_\Pi^{\mathrm{amplitude}}
+      \sim
+      J .
+    \end{equation}
+    We identify this scale with the pseudogap temperature $T^*$.
+
+    However,
+    global superconductivity requires
+    phase locking across the system.
+    The relevant quantity is the phase stiffness $\rho_s$,
+    which measures the energetic cost
+    of spatial variation of the fiber phase.
+
+    In the doped regime,
+    the density of active composites
+    is proportional to the carrier concentration $\delta$.
+    The stiffness therefore scales as
+    \begin{equation}
+      \rho_s^{(0)}
+      \propto
+      \delta \,
+      \Delta_\Pi^{\mathrm{amplitude}}
+      \sim
+      \delta J .
+      \label{eq:stiffness-scaling}
+    \end{equation}
+
+    The superconducting transition temperature
+    is governed by phase coherence rather than amplitude formation.
+    In quasi-two-dimensional systems,
+    the transition is controlled by vortex unbinding,
+    leading to the Berezinskii--Kosterlitz--Thouless criterion
+    \begin{equation}
+      k_B T_c
+      \simeq
+      \frac{\pi}{2}
+      \rho_s(T_c^-)
+      \sim
+      \frac{\pi}{2}
+      \delta J ,
+      \label{eq:tc-deltaJ}
+    \end{equation}
+    up to corrections from interlayer coupling.
+
+    This naturally explains the separation
+    between $T^*$ and $T_c$,
+    as well as the linear scaling of $\rho_s$
+    with doping observed experimentally
+    (Uemura relation).
+
+  \subsection{Dome Structure and Frustration Ratio}
+    \label{subsec:dome-structure}
+
+    The superconducting dome arises
+    from the competition between
+    frustration amplitude and phase stiffness.
+
+    At very low doping,
+    $\mathcal{F}$ is large,
+    but $\delta$ is small,
+    yielding strong amplitude formation
+    yet insufficient phase stiffness.
+    The system remains antiferromagnetic.
+
+    At optimal doping,
+    $\mathcal{F}$ is reduced
+    while $\delta$ is sufficient
+    to sustain large $\rho_s$,
+    maximizing $T_c$.
+
+    In the overdoped regime,
+    $\mathcal{F}$ becomes small,
+    reducing the intrinsic stabilization
+    of the composite,
+    and $T_c$ decreases accordingly.
+
+    The ratio
+    \begin{equation}
+      r_{\mathcal{F}}
+      \equiv
+      \text{first-order proxy for relative frustration amplitude}
+    \end{equation}
+    will play a central role
+    in comparing material families,
+    as developed in Section~\ref{sec:nickelates}.
