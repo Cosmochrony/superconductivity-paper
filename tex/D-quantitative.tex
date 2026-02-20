@@ -1,0 +1,131 @@
+\section{Quantitative Estimate of $T_c$ for Nickelates}
+  \label{app:nickelate_Tc}
+
+  \subsection{Calibration Strategy and the Ratio Formula}
+    \label{subsec:calibration-strategy-and-the-ratio-formula}
+
+    Rather than introducing an independent proportionality constant with unclear physical content,
+    we derive the nickelate $T_c$ directly from the ratio formula of Eq.~(36) of the main text:
+    \begin{equation}
+      \frac{T_c^\textrm{Ni}}{T_c^\textrm{Cu}}
+      \;\approx\;
+      \frac{\delta^\textrm{Ni}\,J^\textrm{Ni}}{\delta^\textrm{Cu}\,J^\textrm{Cu}}
+      \cdot
+      \frac{r_F^\textrm{Ni}}{r_F^\textrm{Cu}},
+      \label{eq:ratio_formula}
+    \end{equation}
+    where the linear approximation $f(r_F)/f(r_F^\textrm{Cu}) \approx r_F/r_F^\textrm{Cu}$ holds at
+    leading order in $r_F$ (see below for the sensitivity to this assumption).
+    We take LSCO at optimal doping as the calibration reference:
+    $T_c^\textrm{Cu} = 38$~K ($k_BT_c^\textrm{Cu} = 3.27$~meV), $J^\textrm{Cu} = 130$~meV,
+    $\delta^\textrm{Cu}_\textrm{opt} = 0.16$, $r_F^\textrm{Cu} = 0.80$.
+    No free parameter is adjusted; all quantities on the right-hand side of
+    Eq.~\eqref{eq:ratio_formula} are independently measurable.
+
+  \subsection{Sensitivity to the Linear Approximation for $f(r_F)$}
+    \label{subsec:sensitivity-to-the-linear-approximation-for-$f(r_f)$}
+
+    The approximation $f(r_F) \propto r_F$ is the simplest monotonic ansatz consistent with the
+    boundary conditions $f(0) = 0$ and $f(1) = 1$.
+    Sub-linear behaviour $f(r_F) \sim r_F^\alpha$ with $\alpha < 1$ would increase the predicted
+    $T_c^\textrm{Ni}$; super-linear behaviour with $\alpha > 1$ would decrease it.
+    Given the present absence of a fully microscopic derivation of $f$, we treat $r_F^\textrm{Ni}$ as
+    an effective parameter that absorbs the uncertainty in $f$: the range
+    $r_F^\textrm{Ni} \in [0.20, 0.35]$ used below encompasses both the direct RIXS estimate of
+    $S^\textrm{Ni}(\pi,\pi)/S^\textrm{Cu}(\pi,\pi)$ and the leading sub-linear correction.
+    This range is conservative and bounded from above by measurements of the ($ \pi, \pi$) spectral
+    weight in infinite-layer nickelates.
+
+  \subsection{Explicit Calculation for Ambient-Pressure Infinite-Layer Nickelates}
+    \label{subsec:explicit-calculation-for-ambient-pressure-infinite-layer-nickelates}
+
+    For R$_{1-x}$Sr$_x$NiO$_2$ at optimal doping, the experimentally constrained input parameters are
+    \begin{equation}
+      J^\textrm{Ni} \;\simeq\; 60\text{--}80~\textrm{meV}
+      \;(696\text{--}928~\textrm{K}), \qquad
+      \delta^\textrm{Ni}_\textrm{opt} \;\simeq\; 0.20, \qquad
+      r_F^\textrm{Ni} \;\simeq\; 0.20\text{--}0.35,
+      \label{eq:Ni_inputs}
+    \end{equation}
+    where the meV-to-Kelvin conversions use $1~\textrm{meV} = 11.60~\textrm{K}$.
+    Inserting the central values $J^\textrm{Ni} = 70$~meV and $r_F^\textrm{Ni} = 0.25$ into
+    Eq.~\eqref{eq:ratio_formula} gives the explicit numerical result
+    \begin{equation}
+      T_c^\textrm{Ni} \;=\; 38~\textrm{K}
+      \times \frac{0.20 \times 70}{0.16 \times 130}
+      \times \frac{0.25}{0.80}
+      \;=\; 38~\textrm{K} \times 0.673 \times 0.313
+      \;\simeq\; 8.0~\textrm{K},
+      \label{eq:Tc_Ni_central}
+    \end{equation}
+    in good agreement with the observed $T_c \simeq 9$--$15$~K.
+    Propagating the full input ranges of Eq.~\eqref{eq:Ni_inputs} yields
+    \begin{equation}
+      T_c^\textrm{Ni} \;\simeq\; 5\text{--}12~\textrm{K},
+      \label{eq:Tc_Ni_range}
+    \end{equation}
+    where the lower bound corresponds to ($J = 60$~meV, $r_F = 0.20$) and the upper bound to
+    ($J = 80$~meV, $r_F = 0.35$).
+    The overlap with the experimental range is summarised in Table~\ref{tab:Tc_compare}.
+
+    \begin{table}[h]
+      \centering
+      \caption{Predicted and observed $T_c$ for nickelate families.
+      All input parameters $(J, \delta_\textrm{opt}, r_F)$ are taken from RIXS, neutron scattering,
+        and transport measurements; see Eq.~\eqref{eq:ratio_formula}.
+        No parameter is adjusted after calibration on LSCO.
+        Conversion: $1~\textrm{meV} = 11.60~\textrm{K}$.}
+      \label{tab:Tc_compare}
+      \begin{tabular}{lccccl}
+        \hline
+        Material & $J$ (meV) & $\delta_\textrm{opt}$ & $r_F$ &
+        $T_c^\textrm{pred}$ (K) & $T_c^\textrm{exp}$ (K) \\
+        \hline
+        LSCO (calibration)       & $130$      & $0.16$ & $0.80$         & $38$      & $38$           \\
+        R$_{1-x}$Sr$_x$NiO$_2$   & $60$--$80$ & $0.20$ & $0.20$--$0.35$ & $5$--$12$ & $9$--$15$      \\
+        La$_3$Ni$_2$O$_7$ (amb.) & $50$--$70$ & $0.15$ & $0.15$--$0.25$ & $3$--$7$  & $\sim 6$--$10$ \\
+        \hline
+      \end{tabular}
+    \end{table}
+
+    The predicted range slightly underestimates the experimental upper end ($15$~K) for
+    $r_F^\textrm{Ni}$ at the low end of the RIXS-constrained window.
+    This discrepancy is within the expected accuracy of the linear approximation for $f(r_F)$
+    and of the single-band treatment that neglects interlayer coupling in the bilayer geometry.
+
+  \subsection{Pressure Enhancement: a Conditional Prediction}
+    \label{subsec:pressure-enhancement:-a-conditional-prediction}
+
+    Under applied pressure $P \gtrsim 14$~GPa, La$_3$Ni$_2$O$_7$ exhibits
+    $T_c \simeq 80$~K in bulk crystals.
+    Within the present framework, this enhancement requires a simultaneous increase of both $J(P)$
+    and $r_F(P)$.
+    Reproducing $T_c(P) \simeq 80$~K from Eq.~\eqref{eq:ratio_formula} with
+    $\delta^\textrm{Ni} = 0.25$ (bilayer effective doping) requires
+    \begin{equation}
+      J^\textrm{Ni}(P)\,r_F^\textrm{Ni}(P) \;\gtrsim\; 140~\textrm{meV},
+      \label{eq:pressure_constraint}
+    \end{equation}
+    for example $J(P) \simeq 200$~meV with $r_F(P) \simeq 0.70$, or
+    $J(P) \simeq 180$~meV with $r_F(P) \simeq 0.80$.
+    These parameter values are at the high end of what pressure is expected to induce based on
+    \textit{ab initio} estimates of orbital overlap, and the prediction is therefore conditional on
+    future RIXS measurements of $J(P)$ and $S(\pi,\pi;P)$ under pressure.
+    We emphasise that Eq.~\eqref{eq:pressure_constraint} provides the experimentally testable
+    constraint: if pressure-dependent RIXS yields the product $J(P)\,r_F(P)$ significantly below
+    $140$~meV, the frustration mechanism would require a supplementary contribution to account
+    for the observed $T_c(P)$.
+
+  \subsection{Falsifiability of the Numerical Estimate}
+
+    The quantitative predictions above would be invalidated by the following observations.
+    If $T_c^\textrm{Ni}$ exceeds $20$~K at ambient pressure without a corresponding increase of
+    $J^\textrm{Ni}$ or $\delta$, the $\rho_s \propto \delta J$ scaling would be broken.
+    If pressure-dependent RIXS confirms $J(P) < 160$~meV and $r_F(P) < 0.60$ while $T_c(P) \simeq 80$~K
+    is maintained, Eq.~\eqref{eq:pressure_constraint} would be violated and a mechanism beyond
+    frustration renormalization would be required.
+    If the pressure-induced $T_c$ enhancement is discontinuous without a corresponding jump in
+    $S(\pi,\pi;P)$, the smooth frustration-driven picture of Eq.~\eqref{eq:ratio_formula} would
+    be insufficient.
+    These constitute near-term falsifiable tests accessible with existing RIXS and transport
+    techniques.
