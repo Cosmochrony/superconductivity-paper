@@ -1,0 +1,136 @@
+\section{Operational Definition and Quantitative Grounding of the Frustration
+Proxy $\mathcal{F}$}
+  \label{app:frustration}
+
+  \subsection{Microscopic Definition}
+    \label{subsec:microscopic-definition}
+
+    The frustration density $\mathcal{F}$ measures the local inability of the spin background to
+    simultaneously satisfy exchange bonds on a plaquette.
+    On a square lattice with nearest-neighbour exchange $J_1 > 0$ and next-nearest-neighbour
+    exchange $J_2 \geq 0$, the standard frustration parameter is
+    \begin{equation}
+      f_\square \;=\; \frac{J_2}{J_1},
+      \label{eq:fplaquette}
+    \end{equation}
+    with $f_\square = 0$ corresponding to the unfrustrated N\'{e}el state and $f_\square = 1/2$
+    to the maximally frustrated point.
+    In the correlated electron language relevant to cuprates and nickelates, the superexchange
+    scales $J_i$ are related to the Hubbard parameters by $J_i = 4t_i^2/U$, so that
+    $f_\square = (t_2/t_1)^2$.
+
+    At the macroscopic level we define the \emph{frustration density} $\mathcal{F}$ as the
+    spatial average of the local plaquette frustration weighted by the projective fiber cost:
+    \begin{equation}
+      \mathcal{F} \;\equiv\; \frac{1}{N_\square}\sum_{\square} f_\square \,
+      \frac{C_\Pi(\mathbf{r}_\square)}{C_\Pi^{\max}},
+      \label{eq:Fmicro}
+    \end{equation}
+    where $N_\square$ is the number of plaquettes and $C_\Pi(\mathbf{r}_\square)$ is the local
+    raccordement cost evaluated at plaquette centre $\mathbf{r}_\square$.
+
+  \subsection{Link to the Magnetic Structure Factor}
+    \label{subsec:link-to-the-magnetic-structure-factor}
+
+    Because $\mathcal{F}$ as defined in Eq.~\eqref{eq:Fmicro} is not directly measurable, we
+    identify its leading-order experimental proxy.
+    The equal-time magnetic structure factor at wavevector $\mathbf{Q}$,
+    \begin{equation}
+      S(\mathbf{Q}) \;=\; \frac{1}{N}\sum_{i,j}
+      e^{i\mathbf{Q}\cdot(\mathbf{r}_i - \mathbf{r}_j)}
+      \langle \mathbf{S}_i \cdot \mathbf{S}_j \rangle,
+      \label{eq:Sq}
+    \end{equation}
+    is maximal at $\mathbf{Q} = (\pi,\pi)$ in the N\'{e}el state
+    ($S_{\max} \simeq S(S+1)$) and is suppressed by frustration.
+    The dominant frustration channel in the CuO$_2$ or NiO$_2$ plane is therefore encoded
+    in $S(\pi,\pi)/S_{\max}$.
+    To leading order in $f_\square$, a self-consistent spin-wave calculation gives
+    \begin{equation}
+      \frac{S(\pi,\pi)}{S_{\max}} \;\approx\; 1 - \alpha_0\, f_\square
+      + \mathcal{O}(f_\square^2),
+      \label{eq:Sproxy}
+    \end{equation}
+    with $\alpha_0 \sim 2$--$4$ depending on spin value and lattice geometry.
+    The first-order proxy used throughout this work,
+    \begin{equation}
+      \mathcal{F} \;\propto\; \frac{S(\pi,\pi)}{S_{\max}},
+      \label{eq:Fproxy}
+    \end{equation}
+    follows from combining Eqs.~\eqref{eq:Sproxy} and \eqref{eq:Fmicro}: to leading order,
+    increasing $f_\square$ decreases $S(\pi,\pi)/S_{\max}$ and decreases $\mathcal{F}$,
+    consistently with the physical picture in which isotropization of frustration reduces the
+    staggered channel.
+    Higher-order corrections in $f_\square$ renormalise $\alpha_0$ but do not alter the monotonic
+    relation between $\mathcal{F}$ and $S(\pi,\pi)/S_{\max}$: the structure factor remains a
+    strictly decreasing function of $f_\square$ for all $f_\square < 1/2$, so the qualitative
+    selection mechanism is unaffected unless fine-tuned cancellations occur (see Section~8.3).
+
+  \subsection{Doping Dependence and Typical Values}
+    \label{subsec:doping-dependence-and-typical-values}
+
+    The carrier concentration $\delta$ modifies both the exchange scale and the magnetic order.
+    To leading order in the $t$--$J$ model,
+    \begin{equation}
+      J_\textrm{eff}(\delta) \;\approx\; J\,(1 - 2\delta), \qquad
+      S(\pi,\pi;\delta) \;\approx\; S(\pi,\pi;0)\,(1 - \beta\,\delta),
+      \label{eq:doping}
+    \end{equation}
+    where $\beta \sim 3$--$5$ is extracted from neutron scattering and RIXS measurements.
+    Combining Eqs.~\eqref{eq:Fproxy} and \eqref{eq:doping} gives the doping-dependent proxy
+    \begin{equation}
+      \mathcal{F}(\delta) \;\propto\; S(\pi,\pi;\delta)
+      \;\approx\; \mathcal{F}_0\,(1 - \beta\,\delta),
+      \label{eq:Fdoping}
+    \end{equation}
+    which decreases monotonically from $\mathcal{F}_0$ at half-filling toward zero in the
+    heavily overdoped regime, consistent with the dome structure discussed in Section~5.5.
+
+    Representative values for the two material families considered in this work are collected in
+    Table~\ref{tab:Fvalues}.
+
+    \begin{table}[h]
+      \centering
+      \caption{Representative values of the frustration proxy $\mathcal{F}$ at optimal doping,
+        extracted from neutron scattering and RIXS measurements of $S(\pi,\pi)$.
+        $S_{\max}$ is normalised to the fully-ordered value at half-filling.}
+      \label{tab:Fvalues}
+      \begin{tabular}{lcccc}
+        \hline
+        Material & $J$ (meV) & $\delta_\textrm{opt}$ &
+        $S(\pi,\pi)/S_{\max}$ & $\mathcal{F}$ (proxy) \\
+        \hline
+        LSCO (optimal)     & $\sim 130$      & $0.16$      & $0.30$--$0.45$ & large    \\
+        YBCO (optimal)     & $\sim 120$      & $0.16$      & $0.25$--$0.40$ & large    \\
+        La$_3$Ni$_2$O$_7$ & $\sim 50$--$70$ & $\sim 0.15$ & $0.10$--$0.20$ & moderate \\
+        \hline
+      \end{tabular}
+    \end{table}
+
+    The cuprate values are consistent with strong staggered frustration, selecting
+    $d_{x^2-y^2}$ symmetry.
+    The nickelate values reflect a substantially reduced and partially isotropized frustration
+    sector, consistent with the $s^\pm$ prediction of Section~6.
+
+  \subsection{Relation between $\mathcal{F}$ and the Frustration Ratio $r_F$}
+    \label{subsec:relation-between-F-and-the-frustration-ratio-r_f}
+
+    The dimensionless frustration ratio $r_F$ introduced in Eq.~(31) of the main text is defined as
+    the normalised frustration density:
+    \begin{equation}
+      r_F \;\equiv\; \frac{\mathcal{F}}{\mathcal{F}_\textrm{crit}},
+      \label{eq:rF_def}
+    \end{equation}
+    where $\mathcal{F}_\textrm{crit}$ is the value of $\mathcal{F}$ at the maximally frustrated point
+    $f_\square = 1/2$ on the unfrustrated reference lattice.
+    By construction $r_F \in [0,1]$, with $r_F = 1$ corresponding to the N\'{e}el state at
+    half-filling and $r_F = 0$ to the fully isotropized or overdoped limit.
+    Using Eq.~\eqref{eq:Fproxy}, one obtains the experimental proxy
+    \begin{equation}
+      r_F \;\approx\; \frac{S(\pi,\pi)}{S(\pi,\pi)\big|_{\delta=0}},
+      \label{eq:rF_proxy}
+    \end{equation}
+    so that $r_F$ is directly accessible from the ratio of the measured structure factor at doping
+    $\delta$ to its half-filling reference value.
+    This identification makes the frustration ratio an observable quantity independent of any
+    free fitting parameter.

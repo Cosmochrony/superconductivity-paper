@@ -1,0 +1,85 @@
+\section{Mapping from the Projective Gap $\Delta_\Pi$ to the ARPES Gap
+  $\Delta(\mathbf{k})$}
+  \label{app:mapping}
+
+  \subsection{Definition Recalled}
+    \label{subsec:definition-recalled}
+
+    The projective gap $\Delta_\Pi \equiv \lambda_{\min}(L_\Pi)|_{w=2}$ is the lowest positive
+    eigenvalue of the linearised relaxation operator restricted to the $w = 2$ fiber sector
+    (Eq.~(7) of the main text).
+    $L_\Pi$ acts on fiber-phase fluctuations $\delta\theta(\mathbf{r})$ around the coherent
+    composite background; its spectrum encodes the local cost of fiber deformation.
+
+  \subsection{Isotropic Limit: Recovery of BCS}
+    \label{subsec:isotropic-limit:-recovery-of-bcs}
+
+    In the absence of anisotropic frustration ($r_F = 0$), the relaxation operator $L_\Pi$ is
+    spatially uniform, its eigenfunctions are plane waves $e^{i\mathbf{k}\cdot\mathbf{r}}$, and
+    the eigenvalue is $\mathbf{k}$-independent at leading order:
+    \begin{equation}
+      \lambda(\mathbf{k})\big|_{r_F=0} \;=\; \Delta_\Pi^{(0)} \;=\; \text{const.}
+      \label{eq:DeltaPi_iso}
+    \end{equation}
+    This corresponds to a nodeless, fully isotropic quasiparticle gap, recovering the BCS
+    identification $\Delta_\textrm{BCS} = \Delta_\Pi^{(0)}$ of Section~3.2.
+
+  \subsection{Anisotropic Regime and Emergence of Nodal Structure}
+    \label{subsec:anisotropic-regime-and-emergence-of-nodal-structure}
+
+    When staggered frustration is present ($r_F > 0$), the operator acquires a
+    $\mathbf{k}$-dependent correction:
+    \begin{equation}
+      L_\Pi(\mathbf{k}) \;=\; L_\Pi^{(0)} + r_F\, V(\mathbf{k};\mathbf{Q}),
+      \label{eq:Lpi_k}
+    \end{equation}
+    where $V(\mathbf{k};\mathbf{Q})$ is the fiber-phase mismatch kernel evaluated at wavevector
+    $\mathbf{Q}$.
+    First-order perturbation theory gives
+    \begin{equation}
+      \lambda(\mathbf{k}) \;=\; \Delta_\Pi^{(0)}
+      + r_F\,\langle \mathbf{k}\,|\,V(\cdot;\mathbf{Q})\,|\,\mathbf{k}\rangle
+      + \mathcal{O}(r_F^2).
+      \label{eq:lambda_k}
+    \end{equation}
+    For $\mathbf{Q} = (\pi,\pi)$ and $B_{1g}$ symmetry, the matrix element evaluates to
+    $\langle \mathbf{k}|V|\mathbf{k}\rangle \propto (\cos k_x - \cos k_y)$, so that
+    \begin{equation}
+      \Delta_\Pi(\mathbf{k}) \;\equiv\; \lambda(\mathbf{k})
+      \;\propto\; \Delta_\Pi^{(0)}\,|\cos k_x - \cos k_y|.
+      \label{eq:DeltaPi_d}
+    \end{equation}
+
+  \subsection{Identification with the Measured ARPES Gap}
+    \label{subsec:identification-with-the-measured-arpes-gap}
+
+    The quasiparticle gap measured by ARPES at Fermi momentum $\mathbf{k}_F$ equals the energy
+    cost of creating a single $w = 1$ excitation from the composite, which equals
+    $\lambda(\mathbf{k}_F)$.
+    The identification is therefore
+    \begin{equation}
+      \Delta(\mathbf{k}) \;=\; \Delta_\Pi(\mathbf{k}) \;=\; \lambda(\mathbf{k})\big|_{w=2}.
+      \label{eq:mapping}
+    \end{equation}
+    Three consequences follow directly from Eq.~\eqref{eq:mapping}.
+
+    \textbf{(1) Isotropic BCS case.}
+    $\Delta(\mathbf{k}) = \Delta_\Pi^{(0)}$: nodeless and fully isotropic, consistent with
+    Eq.~\eqref{eq:DeltaPi_iso}.
+
+    \textbf{(2) Nodal $d$-wave (cuprates).}
+    $\Delta(\mathbf{k}) \propto |\cos k_x - \cos k_y|$ vanishes along the zone diagonal
+    $(k_x = \pm k_y)$, reproducing the four nodal points observed in cuprate ARPES, with the
+    maximal gap at $(\pi,0)$ and $(0,\pi)$.
+
+    \textbf{(3) Extended $s^\pm$ (nickelates).}
+    For $r_F < r_F^*$ the selected irrep is $A_{1g}^\pm$, giving
+    $\Delta(\mathbf{k}) \propto |\cos k_x + \cos k_y|$: the gap changes sign between electron
+    and hole pockets but is nodeless on each individual Fermi sheet, consistent with the
+    intermediate disorder sensitivity predicted in Section~7.4.
+
+    The proportionality constant between $\Delta_\Pi^{(0)}$ and the observed maximum gap
+    amplitude is set by the raccordement cost scale.
+    From Section~4.1, $\Delta_\Pi^\textrm{amplitude} \sim J$, consistent with the empirical ratio
+    $\Delta_{\max}/k_BT_c \sim 4$--$6$ in cuprates when combined with the BKT relation
+    $k_BT_c \simeq \frac{\pi}{2}\rho_s$ and the leading-order stiffness $\rho_s \sim \delta J$.

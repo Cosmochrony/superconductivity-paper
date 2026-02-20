@@ -1,0 +1,85 @@
+\section{Variational Argument for Symmetry Selection}
+  \label{app:variational}
+
+  \subsection{Setup and Admissible Representations}
+    \label{subsec:setup-and-admissible-representations}
+
+    We formalize the symmetry selection principle of Section~6 through an explicit variational
+    argument.
+    Consider a quasi-two-dimensional system with point group $G = D_{4h}$ and a dominant
+    frustration wavevector $\mathbf{Q} = (\pi,\pi)$.
+    The gap function $\Delta(\mathbf{k})$ must belong to an irreducible representation (irrep)
+    of $G$.
+    The four leading irreps are
+    \begin{align}
+      A_{1g}:&\quad \Delta_s(\mathbf{k}) = \Delta_0, \nonumber\
+      B_{1g}:&\quad \Delta_d(\mathbf{k}) = \Delta_0(\cos k_x - \cos k_y), \nonumber\
+      B_{2g}:&\quad \Delta_{d'}(\mathbf{k}) = \Delta_0 \sin k_x \sin k_y, \nonumber\
+      A_{1g}^{\pm}:&\quad \Delta_{s^\pm}(\mathbf{k}) = \Delta_0(\cos k_x + \cos k_y).
+      \label{eq:irreps}
+    \end{align}
+
+  \subsection{The Raccordement Cost Functional}
+    \label{subsec:the-raccordement-cost-functional}
+
+    The fiber raccordement cost functional of Eq.~(30) takes the explicit form
+    \begin{equation}
+      C_\textrm{tot}[\Delta] \;=\; \int_\textrm{FS} \frac{d\Omega_{\mathbf{k}}}{(2\pi)^2}
+      \Bigl[r_F^2\,\bigl|\Delta(\mathbf{k} + \mathbf{Q}) + \Delta(\mathbf{k})\bigr|^2
+      + (1 - r_F^2)\,\bigl|\nabla_{\mathbf{k}}\Delta(\mathbf{k})\bigr|^2\Bigr],
+      \label{eq:Ctot}
+    \end{equation}
+    where $r_F \in [0,1]$ is the frustration ratio of Eq.~(31) and the integral runs over the
+    Fermi surface with solid-angle measure $d\Omega_{\mathbf{k}}$.
+    The first term penalises configurations whose sign does not alternate under translation by
+    $\mathbf{Q}$; the second penalises rapid phase variations along the Fermi surface.
+
+  \subsection{Minimization: $d_{x^2-y^2}$ as the Global Minimum}
+    \label{subsec:minimization-as-the-global-minimum}
+
+    \textbf{Strongly staggered regime ($r_F \to 1$).}
+    The dominant contribution to $C_\textrm{tot}$ is the staggered mismatch term.
+    For the $B_{1g}$ gap one verifies directly that
+    \begin{equation}
+      \Delta_d(\mathbf{k}+(\pi,\pi))
+      = \Delta_0\bigl(\cos(k_x+\pi) - \cos(k_y+\pi)\bigr)
+      = -\Delta_0(\cos k_x - \cos k_y) = -\Delta_d(\mathbf{k}),
+      \label{eq:dwave_stagger}
+    \end{equation}
+    so that the staggered mismatch $|\Delta(\mathbf{k}+\mathbf{Q}) + \Delta(\mathbf{k})|^2$
+    vanishes identically for $B_{1g}$.
+    By contrast, the $s$-wave and $s^\pm$ irreps both contribute
+    $4r_F^2|\Delta_0|^2 > 0$.
+    Therefore,
+    \begin{equation}
+      \underset{\Delta \in \mathrm{irreps}(D_{4h})}{\arg\min}\; C_\textrm{tot}[\Delta]
+      \;=\; B_{1g} \quad \text{for } r_F \gtrsim r_F^*.
+      \label{eq:dwave_min}
+    \end{equation}
+
+    \textbf{Weakly staggered regime ($r_F \to 0$).}
+    The gradient term dominates.
+    On the cuprate or nickelate Fermi surface, the extended $s^\pm$ form factor accumulates a
+    smaller gradient cost than the pure $s$-wave because its nodes lie away from the principal
+    Fermi arcs.
+    For the nickelate multi-band geometry, inter-orbital hybridization further reduces
+    $C_\textrm{tot}$ in the $A_{1g}^\pm$ channel relative to $B_{1g}$, yielding
+    \begin{equation}
+      \underset{\Delta}{\arg\min}\; C_\textrm{tot}[\Delta] \;=\; A_{1g}^\pm \quad
+      \text{for } r_F \lesssim r_F^*.
+      \label{eq:spm_min}
+    \end{equation}
+
+  \subsection{Required Hypotheses}
+    \label{subsec:required-hypotheses}
+
+    The variational argument rests on three independently testable assumptions.
+    First, the dominant frustration wavevector is $\mathbf{Q} = (\pi,\pi)$; incommensurate
+    channels would shift the nodal structure.
+    Second, the Fermi surface possesses $D_{4h}$ symmetry; orthorhombic distortions mix
+    $B_{1g}$ and $B_{2g}$ and can deflect the nodes from the zone diagonal.
+    Third, the cost functional Eq.~\eqref{eq:Ctot} captures the leading symmetry-breaking term;
+    higher-order corrections may renormalise $r_F^*$ but do not change the qualitative
+    $B_{1g}$ versus $A_{1g}^\pm$ selection.
+    All three assumptions are independently testable through neutron scattering, quantum
+    oscillations, and gap-symmetry measurements.
