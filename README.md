@@ -1,5 +1,3 @@
-# Superconductivity – Structural Frustration Framework (Paper F)
-
 This repository contains the source of the **Structural Superconductivity**
 paper  
 *A Unified Real-Space Frustration Mechanism for Superconductivity*
