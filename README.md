@@ -5,10 +5,12 @@ paper
 
 This work presents a **theoretical study** of superconductivity based on a
 real-space geometric mechanism.
-Rather than postulating a specific pairing interaction, the framework
-identifies superconductivity with the formation of stable composite
-configurations that minimize a frustration-dependent cost functional
-under lattice symmetry constraints.
+
+Rather than introducing a material-specific pairing interaction as the primary principle, the framework identifies
+superconductivity with the stabilization and phase locking of a topological composite class that can be realized through
+different microscopic channels.
+In conventional superconductors this stabilization is mediated by phonons, consistent with BCS theory, while in strongly
+correlated systems it arises from frustration minimization in real space.
 
 The analysis applies to both conventional and strongly correlated materials,
 providing a unified structural description of pairing symmetry selection,
@@ -120,6 +122,7 @@ The present paper is focused exclusively on superconductivity
 and does not rely on cosmological or gravitational assumptions.
 
 ## Repository Contents
+
 ```
 paper/
 ├── pdf/ # Compiled article PDF (PRB format)
@@ -127,6 +130,7 @@ paper/
 ├── figures/ # Figures and diagrams
 └── README.md
 ```
+
 ## Links
 
 - 📄 Paper PDF: (to be added)
