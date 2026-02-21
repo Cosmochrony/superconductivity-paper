@@ -1,7 +1,7 @@
 This repository contains the source of the **Structural Superconductivity**
 paper  
 *A Unified Real-Space Frustration Mechanism for Superconductivity*
-(paper F).
+(paper G).
 
 This work presents a **theoretical study** of superconductivity based on a
 real-space geometric mechanism.
