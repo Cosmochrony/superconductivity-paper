@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you cite this work, please use the metadata from this file."
+title: "A Unified Real-Space Frustration Mechanism for Superconductivity: Projective Phase Locking from Conventional to Strongly Correlated Systems"
+type: software
+authors:
+  - family-names: "Beau"
+    given-names: "Jérôme"
+repository-code: "https://github.com/Cosmochrony/supraconductivity-paper"
+url: "https://cosmochrony.org/science/superconductivity/"
+doi: "10.5281/zenodo.18718224"
+license: "CC-BY-4.0"
+preferred-citation:
+  type: article
+  title: "A Unified Real-Space Frustration Mechanism for Superconductivity: Projective Phase Locking from Conventional to Strongly Correlated Systems"
+  authors:
+    - family-names: "Beau"
+      given-names: "Jérôme"
+  year: 2026
+  doi: "10.5281/zenodo.18718224"
+  url: "https://doi.org/10.5281/zenodo.18718224"
